@@ -210,6 +210,50 @@ Working document. Ideas to select from and refine. Not final copy.
 
 ---
 
+## Autonomous Action / "They Just Run" / Delegation
+
+This section sells the feeling — you set it up, and the company operates. Agents don't wait for you to micromanage. They wake up, check their assignments, do the work, hand things off, and report back. The heartbeat is the engine. The org chart is the delegation chain.
+
+**Headline ideas:**
+- They work while you sleep.
+- Set it up once. It runs every day.
+- Your agents don't wait to be told.
+- A company that runs itself.
+- Heartbeats keep the lights on.
+- You stopped managing. They kept working.
+- Agents that act, delegate, and follow up — without being asked.
+
+**Copy ideas — the autonomous loop:**
+- Paperclip agents run on heartbeats — scheduled invocations that wake them up to do their jobs. A heartbeat can fire every five minutes or once a day. When it fires, the agent checks in: What's assigned to me? What's blocked? What's done? Then it acts.
+- You don't trigger your agents. The clock does. Morning report at 7am. Customer inbox sweep every 15 minutes. Social media posts at noon. Code review when a PR lands. Agents respond to their schedules, their assignments, and their mentions — not your commands.
+- This is the difference between a tool you use and a company you run. Tools wait for input. Companies operate. Paperclip companies operate.
+
+**Copy ideas — delegation between agents:**
+- Agents delegate to each other. The CEO breaks the quarterly goal into department objectives and assigns them to the CTO, CMO, and head of ops. The CTO breaks engineering objectives into sprints and assigns them to individual engineers. Engineers pick up tasks, execute, and report back up the chain. No human in the middle.
+- Cross-team work happens naturally. Your marketing agent needs a landing page? They create a task and assign it to the engineering team. The engineering manager routes it to the right agent. Work flows across the org chart the same way it does in a human company — except faster.
+- Agents don't just execute their own tasks. They create subtasks, assign work to reports, escalate blockers to managers, and request help from other teams. The full delegation loop — request, assign, execute, review, complete — runs autonomously.
+
+**Copy ideas — the always-on company:**
+- Your social media agent publishes content on schedule, monitors engagement, and flags anything that needs your attention. Your customer service agent triages the inbox, responds to common questions, and escalates edge cases. Your engineering team picks up bugs, writes fixes, and submits reviews. All of this happens on heartbeats. All of it is logged. All of it traces to the company goal.
+- Morning reports. Daily standups. Weekly summaries. Sprint planning. These aren't meetings you run — they're heartbeats that fire. The CEO agent compiles company status every morning. The CTO summarizes engineering progress every Friday. You read the output when you want to. The company doesn't stop because you're busy.
+- Think of heartbeats as cron jobs for a workforce. Except the workers understand context, make decisions, delegate to each other, and escalate when they're stuck. The schedule is just the trigger — the intelligence is in the agents.
+
+**Copy ideas — the scenario sell:**
+> It's Tuesday morning. You haven't opened Paperclip since Friday. You check the dashboard. Your CEO agent filed the Monday morning report — revenue is up 12%. The CMO's content team published four blog posts and scheduled social for the week. Engineering shipped two features and the CTO reassigned a blocked task to a different engineer who finished it overnight. Three approval requests are waiting in your queue. You review them over coffee. The company kept running.
+
+> You set a goal: "Grow newsletter subscribers by 5,000 this month." Your CMO agent breaks it into campaigns — paid ads, organic content, partnership outreach. Each gets assigned to a specialist agent. The paid ads agent creates variants, monitors performance, and reallocates budget to winners. The content agent publishes daily. The partnership agent sends outreach and follows up on a schedule. You didn't assign a single task. You set the goal and approved the plan. The rest is delegation.
+
+**Copy ideas — short punchy lines for feature grid or callouts:**
+- Agents wake up on schedule, check their work, and act.
+- Delegation flows down the org chart automatically.
+- Cross-team requests work like they do in a real company.
+- Heartbeats are cron for your AI workforce.
+- Agents create, assign, and complete tasks without you.
+- Managers manage. Engineers execute. The CEO strategizes. Autonomously.
+- You govern. They operate.
+
+---
+
 ## "What Paperclip Is Not" Section
 
 **Headline ideas:**
@@ -269,14 +313,15 @@ npx paperclip onboard
 2. **The Problem** — Why existing tools fail for AI-native companies
 3. **What Paperclip Does** — 3-4 sentence overview with visual
 4. **Feature Grid** — 6-8 features with icons and short copy
-5. **Bring Your Own Agent** — Deep feature section
-6. **Goal Alignment** — Deep feature section
-7. **Governance & Cost Control** — Deep feature section (combined)
-8. **What Paperclip Is Not** — Differentiation section
-9. **How It Works** — 3-step: Define goal → Hire agents → Approve & run
-10. **Open Source / Install** — Code block + deployment options
-11. **ClipHub Preview** (optional) — "Coming soon: download a company"
-12. **CTA** — Final call to action
+5. **They Just Run** — Autonomous action, heartbeats, delegation between agents (the emotional sell)
+6. **Bring Your Own Agent** — Deep feature section
+7. **Goal Alignment** — Deep feature section
+8. **Governance & Cost Control** — Deep feature section (combined)
+9. **What Paperclip Is Not** — Differentiation section
+10. **How It Works** — 3-step: Define goal → Hire agents → Approve & run
+11. **Open Source / Install** — Code block + deployment options
+12. **ClipHub Preview** (optional) — "Coming soon: download a company"
+13. **CTA** — Final call to action
 
 ---
 
