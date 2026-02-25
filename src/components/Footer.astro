@@ -14,19 +14,27 @@
       <div class="footer-col">
         <h4 class="footer-col-heading">Product</h4>
         <a href="#get-started">Get started</a>
+        <a href="#get-started">Quickstart</a>
         <!-- <a href="#">Pricing</a> -->
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-heading">Platform</h4>
+        <a href="#get-started">Agents</a>
+        <a href="#get-started">Governance</a>
+        <a href="#get-started">Integrations</a>
       </div>
       <div class="footer-col">
         <h4 class="footer-col-heading">Developers</h4>
         <a href="https://github.com/paperclip-ai/paperclip">Documentation</a>
+        <a href="https://github.com/paperclip-ai/paperclip">API reference</a>
         <a href="https://github.com/paperclip-ai/paperclip">GitHub</a>
       </div>
-      <!-- <div class="footer-col">
-        <h4 class="footer-col-heading">Company</h4>
-        <a href="#">About</a>
-        <a href="#">Blog</a>
-        <a href="#">Careers</a>
-      </div> -->
+      <div class="footer-col">
+        <h4 class="footer-col-heading">Resources</h4>
+        <a href="https://github.com/paperclip-ai/paperclip">Changelog</a>
+        <a href="https://github.com/paperclip-ai/paperclip">Contributing</a>
+        <a href="https://github.com/paperclip-ai/paperclip">License</a>
+      </div>
     </div>
 
     <div class="container footer-bottom">
@@ -81,7 +89,7 @@
   /* ── Link columns ── */
   .footer-columns {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: var(--space-lg);
     padding-top: clamp(3rem, 6vw, 5rem);
     padding-bottom: clamp(4rem, 10vw, 8rem);
@@ -141,6 +149,13 @@
   }
 
   /* ── Responsive ── */
+  @media (max-width: 768px) {
+    .footer-columns {
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-lg) var(--space-md);
+    }
+  }
+
   @media (max-width: 480px) {
     .footer-bottom {
       flex-direction: column;

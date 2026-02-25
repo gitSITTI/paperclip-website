@@ -1,22 +1,19 @@
 ---
 const features = [
-  'Agents wake up on schedule, check their work, and act.',
-  'Delegation flows down the org chart automatically.',
-  'Cross-team requests work like they do in a real company.',
+  'Agents wake up on a schedule, check their work, and act.',
+  'Delegation flows up and down the org chart automatically.',
+  'Ticket assignments wake agents to work.',
+  'Cross-team requests delegate to the best agent for the job.',
 ];
 ---
 
 <section class="feature-section section">
   <div class="container">
     <hr class="section-divider" />
-    <div class="feature-header">
-      <div>
+    <div class="feature-layout">
+      <div class="feature-copy">
         <span class="section-badge">Heartbeats</span>
         <h2 class="heading-serif feature-heading">Heartbeats keep<br />the lights on.</h2>
-      </div>
-    </div>
-    <div class="feature-layout">
-      <div class="feature-details">
         <ul class="feature-list">
           {features.map((f) => (
             <li class="feature-list-item">
@@ -55,21 +52,21 @@ const features = [
 </section>
 
 <style>
-  .feature-header {
-    padding-top: var(--space-2xl);
-    margin-bottom: var(--space-xl);
-  }
-
   .feature-heading {
     font-size: clamp(2rem, 4vw, 2.8rem);
-    margin-bottom: var(--space-sm);
+    margin-bottom: var(--space-lg);
   }
 
   .feature-layout {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
-    gap: var(--space-lg);
-    align-items: start;
+    gap: var(--space-xl);
+    align-items: center;
+    padding-top: var(--space-2xl);
+  }
+
+  .feature-copy {
+    padding-top: var(--space-xs);
   }
 
   .feature-list {
@@ -98,6 +95,9 @@ const features = [
     border-radius: var(--radius-lg);
     min-height: 320px;
     padding: var(--space-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   @media (max-width: 768px) {

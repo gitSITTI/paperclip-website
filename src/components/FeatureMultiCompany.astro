@@ -236,11 +236,35 @@
       document.querySelectorAll('.org-dropdown.is-open').forEach(d => {
         if (d !== dropdown) close(d);
       });
+
+      // Reset position before measuring
+      dropdown.style.left = '50%';
+      dropdown.style.right = 'auto';
+      dropdown.style.transform = 'translateX(-50%)';
+
       dropdown.classList.add('is-open');
-      const cards = dropdown.querySelectorAll('.mini-card');
-      cards.forEach(c => c.classList.remove('is-visible'));
+
+      // Clamp to viewport edges
       requestAnimationFrame(() => {
-        cards.forEach(c => c.classList.add('is-visible'));
+        const rect = dropdown.getBoundingClientRect();
+        const pad = 8;
+
+        if (rect.left < pad) {
+          // Overflowing left — pin to left edge of wrapper
+          const wrapperRect = wrapper.getBoundingClientRect();
+          const shift = pad - rect.left;
+          dropdown.style.left = `calc(50% + ${shift}px)`;
+        } else if (rect.right > window.innerWidth - pad) {
+          // Overflowing right — nudge left
+          const shift = rect.right - (window.innerWidth - pad);
+          dropdown.style.left = `calc(50% - ${shift}px)`;
+        }
+
+        const miniCards = dropdown.querySelectorAll('.mini-card');
+        miniCards.forEach(c => c.classList.remove('is-visible'));
+        requestAnimationFrame(() => {
+          miniCards.forEach(c => c.classList.add('is-visible'));
+        });
       });
     }
 
@@ -282,7 +306,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: var(--space-md);
-    align-items: start;
+    align-items: stretch;
   }
 
   .company-card-wrapper {
@@ -299,6 +323,7 @@
     cursor: default;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
     border: 1.5px solid transparent;
+    height: 100%;
   }
 
   .company-card[data-company]:hover {
@@ -378,7 +403,7 @@
     border: 1.5px solid var(--color-border);
     border-radius: var(--radius-sm);
     padding: 16px 14px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.10), 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: none;
     display: flex;
     flex-direction: column;
     align-items: center;
