@@ -8,3 +8,5 @@ build/
 .claude/
 *.log
 videos/
+.env.*
+!.env.example
